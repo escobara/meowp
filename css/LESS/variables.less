@@ -1,0 +1,45 @@
+// LESS Variables
+
+@regular-text: #2b2b2b;  // Regular Text
+@primary: 	   #e54d42;	 // Link and Primary Color
+@light-text:   #7a7a7a;  // Light text
+@light-bg: 	   #f7f7f7;  // light background
+@dark-bg: 	#252e38; 	 // Dark background
+@dark-bg-text: #1A2128; 		//text on dark bg
+@error: #d7262f; 		 //Error
+@border: #dcdbdb;        //Border
+@intro-color-1: #2eb4eb;  //blue color second intro block
+@intro-color-2: #a6c63a; //green color third intro block
+
+// mixins are like functions 
+
+
+.round(@radius: 5px) {
+	-webkit-border-radius:  @radius;
+	-moz-border-radius: 	@radius;
+	border-radius: 			@radius; 
+
+	-webkit-background-clip: 	padding-box;
+	-moz-background-clip: 		padding; 
+	background-clip: 			padding-box; 
+}
+
+
+.drop-shadow( @x: 0, @y: 0, @blur: 5px, @spread: 0, @alpha: 0.16) {
+	-webkit-box-shadow: 	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: 		@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow: 			@x @y @blur @spread rgba(0, 0, 0, @alpha);
+} 
+
+.inner-shadow( @x: 0, @y: 0, @blur: 5px, @spread: 0, @alpha: .2) {
+	-webkit-box-shadow: 	inset @x @y @blur @spread rgba(0,0,0, @alpha);
+	-moz-box-shadow: 		inset @x @y @blur @spread rgba(0,0,0, @alpha);
+	box-shadow: 			inset @x @y @blur @spread rgba(0,0,0, @alpha);
+}
+
+.transition( @property: color, @duration: .2s) {
+	-webkit-transition: 	@property @duration ease-out; 
+	-moz-transition: 		@property @duration ease-out; 
+	-o-transition: 			@property @duration ease-out; 
+	transition: 			@property @duration ease-out; 
+}
