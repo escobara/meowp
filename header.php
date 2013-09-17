@@ -15,6 +15,7 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic|Bitter:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://basehold.it/24">
         <!-- script -->
         <?php wp_enqueue_script("jquery"); ?>
 

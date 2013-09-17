@@ -24,7 +24,7 @@ ul.row {
 
 .main-nav {
 	ul {
-		margin-top: 3em;
+		margin-top: 1em;
 
 		li {
 			text-transform: uppercase;
@@ -49,6 +49,10 @@ ul.row {
 .middle-container {
 	background: transparent url('../images/pattern.png') 0 0 repeat;
 	.inner-shadow();
+
+	ul {
+		margin-bottom: 1.26em;
+	}
 }
 
 .intro-content {
@@ -151,11 +155,6 @@ ul.row {
 	}
 }
 
-.sidebar {
-	padding: 1.5em;
-
-}
-
 .available {
 	color: @intro-color-2;
 }
@@ -180,10 +179,11 @@ ul.row {
 	img {
 		float: left;
 		padding: 0 1em;
+		max-height: 240px;
 	}
 
 	h2, p {
-		padding: 0 1em; 
+		padding: 0 1.5em; 
 	}
 
 	h2 a,
@@ -191,8 +191,8 @@ ul.row {
 		.transition();
 	}
 
-	li {
-
+	h2, p {
+		margin-bottom: 0;
 	}
 }
 

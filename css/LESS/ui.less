@@ -76,7 +76,7 @@ hr {
 	background: @primary; 
 	color: white; 
 	font-size: 16px; 
-	height: 48px; 
+	height: 3em; 
 
 	.inner-shadow(0, -5px, 0, 0, .2);
 
@@ -124,6 +124,15 @@ blockquote {
 
 		&:hover {
 			background-color: darken(@light-bg, 2%);
+		}
+
+		&.error {
+			background-color: @light-error;
+
+			label,
+			input {
+				color:@error;
+			}
 		}
 	}
 	label {

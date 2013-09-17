@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <section>
-		<hr class="no-margin" />
+<!-- 		<hr class="no-margin" />
 		<?php wp_nav_menu(array (
 			'theme_location' => 'category-menu',
 			'container' => '',
 			'menu_class' => 'inline align-center portfolio-header',
 			'menu_id' => 'portfolio-sorting'
-		)) ?>
+		)) ?> -->
 		<div class="middle-container section-content">
 			<div class="container">
 				<?php if(have_posts()) : ?>
@@ -26,14 +26,14 @@
 
 					 ?>
 
-					<li class=" box section-content span8 blog-index <php echo $classes;?>">
+					<li class=" box section-content span8 blog-index">
 							<?php the_post_thumbnail(); ?>
 							<h2><a href="<?php the_permalink();?>"><?php the_title() ;?></a></h2>
 							<p><?php the_excerpt(); ?></p>
 							<p><em><?php the_time('l, F jS, Y'); ?></em></p>
 					</li>						
 					<?php endwhile; else: ?>
-				</ul> 
+					</ul> 
 							<div class="middle-container section-content">
 								<div class="container">
 									<p>Sorry, there are no posts </p>
@@ -41,6 +41,12 @@
 							</div> <!-- end middle container -->
 					<?php endif ?>
 				</div> <!-- end container -->
-			</div>  <!-- end middle-container -->
+<!-- 								<div class="span13  align-center sidebar">
+							    <?php query_posts('cat=41');?>
+								<?php while(have_posts()):the_post();?>
+								<h2><?php the_title();?></h2>
+								<?php the_content();?>
+								<?php endwhile;?>
+			</div>  <!-- end middle-container --> 
 		</section>
 <?php get_footer(); ?>

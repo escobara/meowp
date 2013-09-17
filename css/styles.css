@@ -1,12 +1,11 @@
 /***************************************************
 
-	Project Name: Minimalist Wordpress Theme
-	Project Description: Wordpress theme built to house my portfolio and blog
+	Project Name: Prototype Builder's Coming Soon Page
+	Project Description: 
 	File Name: style.css
 	Author: Rene Escobar
 	Author URI: http://www.reneescobar.me
 	Version 1.0.0
-
 
 ***************************************************/
 /*!
@@ -1599,7 +1598,7 @@ h2 a:hover {
 }
 h3 {
   font-size: 14px;
-  line-height: 1.2em;
+  line-height: 1.5em;
   text-transform: uppercase;
 }
 em {
@@ -1695,7 +1694,7 @@ hr:no-margin {
   background: #e54d42;
   color: white;
   font-size: 16px;
-  height: 48px;
+  height: 3em;
   -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
@@ -1735,6 +1734,13 @@ blockquote cite {
 }
 .quote-form p:hover {
   background-color: #f2f2f2;
+}
+.quote-form p.error {
+  background-color: #fff5f5;
+}
+.quote-form p.error label,
+.quote-form p.error input {
+  color: #ff0000;
 }
 .quote-form label {
   display: inline-block;
@@ -1791,7 +1797,7 @@ ul.row {
   background: transparent url('../images/color-stripe.png') 0 0 repeat-x;
 }
 .main-nav ul {
-  margin-top: 3em;
+  margin-top: 1em;
 }
 .main-nav ul li {
   text-transform: uppercase;
@@ -1815,6 +1821,9 @@ ul.row {
   -webkit-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+.middle-container ul {
+  margin-bottom: 1.26em;
 }
 .intro-content {
   background-color: #252e38;
@@ -1957,9 +1966,6 @@ ul.row {
 .portfolio-image-list li:last-child {
   margin-bottom: 0;
 }
-.sidebar {
-  padding: 1.5em;
-}
 .available {
   color: #a6c63a;
 }
@@ -1978,10 +1984,11 @@ ul.row {
 .blog-index img {
   float: left;
   padding: 0 1em;
+  max-height: 240px;
 }
 .blog-index h2,
 .blog-index p {
-  padding: 0 1em;
+  padding: 0 1.5em;
 }
 .blog-index h2 a,
 .blog-index p a {
@@ -1989,6 +1996,10 @@ ul.row {
   -moz-transition: color 0.2s ease-out;
   -o-transition: color 0.2s ease-out;
   transition: color 0.2s ease-out;
+}
+.blog-index h2,
+.blog-index p {
+  margin-bottom: 0;
 }
 .blog-single-nav li a {
   background: #f7f7f7;
